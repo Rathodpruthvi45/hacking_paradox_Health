@@ -1,0 +1,346 @@
+.bg-image2 {
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(4px);
+  /* content: attr(custom-tooltip); */
+  /* background-image: url("lock.jpg"); */
+
+  /* Full height */
+  /* height: 10%;
+    width: 10%; */
+
+  transition: .1s ease;
+  opacity: 1;
+  /* Center and scale the image nicely */
+}
+
+.bg-image2:hover {
+  transform: scale(1.02);
+
+}
+
+
+.bg-image2 #idbut {
+  /* transform-style: flat; */
+  filter: blur(0px);
+}
+
+
+.covsec {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.5)), url(covid2.jpg);
+  background-position: center;
+  background-size: cover;
+  /* min-height: 100vh; */
+}
+
+.transcls :hover {
+  transform: scale(1.02);
+}
+
+@media only screen and (max-width: 600px) {
+  #tobedis {
+    display: none;
+  }
+
+  .dat {
+    display: none;
+  }
+
+
+  .start {
+    margin-top: 70px;
+  }
+
+  #strong_head {
+    text-align: start;
+  }
+
+  .text {
+    margin-bottom: 20px;
+  }
+
+  .dtin {
+    position: absolute;
+    font-size: 25px;
+    padding-top: 50px;
+    text-align: start;
+
+  }
+
+  #covid_19,
+  #bone,
+  #tumor,
+  #skin {
+    display: none;
+  }
+
+  #covid_section,
+  #bone_section,
+  #tumor_section,
+  #skin_section,
+  #diabetes_section {
+    width: 100%;
+  }
+}
+
+.text {
+  position: relative;
+  font-family: sans-serif;
+}
+
+#sp {
+  margin-right: 1rem;
+}
+
+
+
+
+
+.up {
+  margin-top: 70px;
+
+}
+
+.vl {
+  height: 250px;
+  width: 3.7px;
+  margin-left: 27px;
+  background: linear-gradient(#d2a8ff, #a371f7 10%, #196c2e 70%, #2ea043 80%, #56d364);
+
+}
+
+#ml {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  margin-left: 1%;
+  /* border-radius: 50%; */
+}
+
+.dtin {
+  font-size: 25px;
+  left: 5%;
+
+}
+
+.dtin1 {
+  font-size: 25px;
+  left: 6%;
+}
+
+#ml1 {
+  width: 32px;
+  height: 32px;
+  margin-top: 1%;
+  margin-right: 10px;
+  margin-left: 1%;
+  /* filter: hue-rotate(90deg); */
+
+  /* border-radius: 50%; */
+}
+
+.vl1 {
+  top: 500px;
+  height: 100px;
+  width: 3.7px;
+  margin-left: 27px;
+  margin-top: 1%;
+  background: linear-gradient(#56d364, #2ea043, var(--color-canvas-default));
+  transition-delay: 500ms;
+}
+
+.ic {
+  display: flex;
+  position: relative;
+}
+
+#strong_head {
+  padding-top: 20px;
+  font-size: 3rem;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 100px;
+}
+
+.ic::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
+  animation: glow 1.5s ease-out infinite;
+}
+
+.im img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#curve {
+  width: 40rem;
+  height: 600px;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.line-2 {
+  position: relative;
+  margin-left: 8px;
+  padding: 5px;
+  /* left: 10px; */
+  text-align: left;
+  font-size: 180%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 3px;
+  background: transparent;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+input {
+  width: auto;
+  margin-right: 15px;
+  vertical-align: middle;
+  accent-color: #000;
+  outline: #000;
+}
+
+
+.question-answer label {
+
+  justify-content: space-around;
+  padding-left: 20px;
+}
+
+.btn-block {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.h4 label,
+h4 {
+
+  background-color: #e2e0e0;
+  padding: 7px;
+}
+
+@media (max-width: 767px) {
+  h4 {
+    padding: auto;
+    justify-content: baseline;
+  }
+
+  .question-answer label {
+    justify-content: space-around;
+    padding-left: auto;
+    position: relative;
+  }
+}
+
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+    500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 12em;
+  }
+}
+
+
+/* 
+@keyframes glow {
+  0% {
+    transform: scale(0);
+    opacity: 0.7;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 0.2;
+    box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    transform: scale(0);
+    opacity: 0.7;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+} */
+
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+#login1 {
+  background-color: transparent;
+  border: 2px solid rgb(23, 23, 25);
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  /* padding: 16px 32px; */
+  transition-duration: 0.4s;
+}
+
+#login1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+#login1:hover {
+  background-color: #555555;
+  color: white;
+
+}
+
+/* #login1:hover {
+  border: 2px solid blue;
+  border-radius: 20px;
+  cursor: pointer;
+} */
